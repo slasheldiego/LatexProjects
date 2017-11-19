@@ -1,0 +1,87 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw"
+    version="1.1" baseProfile="full">
+    <g>
+        <g latexdraw:type="square" id="id1525776203">
+            <rect x="360.5" y="180.5" width="39.0" height="39.0"
+                latexdraw:borderPos="outer" stroke-width="1.0"
+                stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="square" id="id1519033128">
+            <rect x="400.5" y="180.5" width="39.0" height="39.0"
+                latexdraw:borderPos="outer" stroke-width="1.0"
+                stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="square" id="id1642058654">
+            <rect x="440.5" y="180.5" width="39.0" height="39.0"
+                latexdraw:borderPos="outer" stroke-width="1.0"
+                stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="square" id="id391559632">
+            <rect x="580.5" y="180.5" width="39.0" height="39.0"
+                latexdraw:borderPos="outer" stroke-width="1.0"
+                stroke="black" fill="#999999"/>
+        </g>
+        <g latexdraw:type="square" id="id1887302904">
+            <rect x="620.5" y="180.5" width="39.0" height="39.0"
+                latexdraw:borderPos="outer" stroke-width="1.0"
+                stroke="black" fill="#999999"/>
+        </g>
+        <g latexdraw:type="square" id="id1880573183">
+            <rect x="660.5" y="180.5" width="39.0" height="39.0"
+                latexdraw:borderPos="outer" stroke-width="1.0"
+                stroke="black" fill="#999999"/>
+        </g>
+        <g latexdraw:type="text" id="id1496339874" fill="black" latexdraw:position="bl">
+            <text x="425.0" y="125.0">$=-1$</text>
+        </g>
+        <g latexdraw:type="square" id="id495528429">
+            <rect x="375.5" y="100.5" width="39.0" height="39.0"
+                latexdraw:borderPos="outer" stroke-width="1.0"
+                stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id804459607" fill="black" latexdraw:position="bl">
+            <text x="650.0" y="125.0">$=1$</text>
+        </g>
+        <g latexdraw:type="square" id="id1242382492">
+            <rect x="595.5" y="100.5" width="39.0" height="39.0"
+                latexdraw:borderPos="outer" stroke-width="1.0"
+                stroke="black" fill="#999999"/>
+        </g>
+        <g latexdraw:type="text" id="id1843983868" fill="black" latexdraw:position="bl">
+            <text x="345.0" y="260.0">$(-1)(-1)(-1)=-1$</text>
+        </g>
+        <g latexdraw:type="text" id="id1785187473" fill="black" latexdraw:position="bl">
+            <text x="595.0" y="260.0">$(1)(1)(1)=1$</text>
+        </g>
+        <g latexdraw:type="text" id="id560807384" fill="black" latexdraw:position="bl">
+            <text x="395.0" y="285.0">Clase 1</text>
+        </g>
+        <g latexdraw:type="text" id="id1470668953" fill="black" latexdraw:position="bl">
+            <text x="615.0" y="285.0">Clase 2</text>
+        </g>
+    </g>
+    <defs/>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:latexIncludes/>
+            <latexdraw:displayXScale>true</latexdraw:displayXScale>
+            <latexdraw:displayYScale>true</latexdraw:displayYScale>
+            <latexdraw:unit>CM</latexdraw:unit>
+            <latexdraw:zoom>1.0</latexdraw:zoom>
+            <latexdraw:magneticGridStyle>CUSTOMISED</latexdraw:magneticGridStyle>
+            <latexdraw:gridGap>5</latexdraw:gridGap>
+            <latexdraw:magneticGrid>true</latexdraw:magneticGrid>
+            <latexdraw:version>3.3.6</latexdraw:version>
+            <latexdraw:size>
+                <latexdraw:width>1440</latexdraw:width>
+                <latexdraw:height>827</latexdraw:height>
+            </latexdraw:size>
+            <latexdraw:position>
+                <latexdraw:x>0.0</latexdraw:x>
+                <latexdraw:y>23.0</latexdraw:y>
+            </latexdraw:position>
+        </latexdraw:metadata>
+    </metadata>
+</svg>
