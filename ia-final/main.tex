@@ -1,0 +1,99 @@
+\documentclass[12pt]{exam}
+\usepackage[utf8]{inputenc}
+
+%Esta es un modificacion simple
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+\usepackage{pdflscape}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage[style=authoryear]{biblatex}
+\usepackage{colortbl}
+%\pgfplotsset{width=10cm,compat=1.9}
+\usepackage{ragged2e}%justify
+\usepackage{amsmath}
+\usepackage[]{algorithm2e}
+
+\newcommand{\class}{Inteligencia Artificial}
+\newcommand{\term}{2017-II}
+\newcommand{\examnum}{Examen Final}
+\newcommand{\examdate}{2017-11-30}
+\newcommand{\timelimit}{3 horas}
+
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - P\'agina \thepage\ de \numpages}{\examdate}
+\runningheadrule
+
+
+\begin{document}
+
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+\textbf{\class} & \textbf{Nombre:} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\\
+\textbf{\examnum} &&\\
+\textbf{\examdate} &&\\
+\textbf{Tiempo L\'imite: \timelimit} & Profesor: & Mg. Diego Benavides
+\end{tabular*}\\
+\rule[2ex]{\textwidth}{2pt}
+
+El examen contiene \numpages\ p\'aginas (incluyendo esta) y \numquestions\ preguntas. El total de puntaje es \numpoints.
+
+\begin{center}
+Tabla de puntaje (uso del profesor)\\
+\addpoints
+\gradetable[v][questions]
+\end{center}
+
+\noindent
+\rule[2ex]{\textwidth}{2pt}
+
+\begin{questions}
+
+\question[2] Dada las variables aleatorias cont\'inuas $y$ y $x$ demostrar que
+\begin{equation*}
+P(y|x)=\frac{P(x|y)P(y)}{\int_{y}P(x|y)P(y)}
+\end{equation*}
+\addpoints
+
+\question[4] Los doctores encuentran que la gente con la enfermedad Kreuzfeld-Jacob ($KJ$) casi invariablemente com\'ia hamburguesas, tal que $P(Hamburguesa|KJ)=0.9$, donde la variable $Hamburguesa$ representa al comedor de hamburguesas. Adem\'as la probabilidad de que un individuo tenga $KJ$ es actualmente bastante baja, aprox. 1 en 100000. 
+\begin{itemize}
+\item[1.] Cu\'al es la probabilidad de que un comedor de hamburguesas tendr\'a la enfermedad $KJ$ (es decir, $P(KJ|Hamburguesa)$) dado que $P(Hambuerguesa)=0.5$.
+\item[2.] Si $P(Hambuerguesa)=0.001$ ?`Cu\'al ser\'ia el resultado? Concluya la variaci\'on que observa respecto a las variables aleatorias y al caso de estudio.
+\end{itemize}
+\addpoints
+
+\question[4] Sean $f$ y $g$ que perteneces a $\mathbb{H}$ (EHKR) y sean $(f_n)$ y $(g_n)$ dos sucesiones de Cauchy en $\mathbb{H}_0$ (cualquier subespacio de $\mathbb{C}^{E}$, $E$ abstracto) que converge puntualmente a $f$ y $g$ respectivamente. Entonces la sucesi\'on $\left<f_n,g_n\right>_{\mathbb{H}_0}$ es convergente y su l\'imite solo depende $f$ y $g$.
+\begin{itemize}
+	\item[*] Tomar en cuenta que para cualquier funci\'on $f\in\mathbb{H}_0$ y cualquier sucesi\'on de Cauchy $(f_n)\in\mathbb{H}_0$, puntualmente convergente a $f$, $(f_n)$ converge tambi\'en a $f$ en el sentido de norma.
+\end{itemize}
+\addpoints
+
+\question[4]  Sea $\mathbb{H}=L_2([0,1])$, con la m\'etrica
+\begin{equation*}
+	||f_1-f_2||_{L_2([0,1])}=\left(\int_{0}^{1}|f_1(x)-f_2(x)|^2\right)^{1/2}
+\end{equation*}
+y considerando la sucesi\'on de funciones $\{q_n\}^{\infty}_{n=1}$ donde $q_n=x^n$. Demostrar que las evaluaciones funcionales no son cont\'inuas en todos los casos respecto de $q_n$.
+
+\addpoints
+
+\question[3] Considere $E=\mathbb{R}^2$ y $k(x,y)=\left<x,y\right>^2$. Demostrar que existen al menos dos representaciones de $\phi(x)$ asociados a diferentes espacios caracter\'isticos. Explicar que pasa con la unicidad del EHKR en este caso.
+\addpoints
+
+\question[3] Explicar la relaci\'on subyacente a los problemas (1) y (2)
+\begin{equation}
+	\inf_{f\in\mathbb{H}}\lambda||f||_{\mathbb{H}}^{2}+R_{L,D}(f)\,\,\,\text{y}
+\end{equation}
+\begin{equation}
+	\min_{(w,b)\in\mathbb{H}_0\times\mathbb{R}}\lambda\left<w,w\right>+\frac{1}{n}\displaystyle\sum_{i=1}^{n}L(y_i,f_{(w,b)}(x_i))
+\end{equation}
+donde $L(y_i,f_{(w,b)}(x_i))=\max\{0,1-y_i(\left<w,\phi(x_i)\right>+b)\}=\xi_i$ y $f_{(w,b)}(x_i)=\left<w,\phi(x_i)\right>+b$.
+
+\addpoints
+
+
+\end{questions}
+
+\end{document}
