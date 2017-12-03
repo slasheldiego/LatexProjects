@@ -1,0 +1,131 @@
+\documentclass[12pt]{exam}
+\usepackage[utf8]{inputenc}
+
+%Esta es un modificacion simple
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+\usepackage{pdflscape}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage[style=authoryear]{biblatex}
+\usepackage{colortbl}
+%\pgfplotsset{width=10cm,compat=1.9}
+\usepackage{ragged2e}%justify
+\usepackage{amsmath}
+\usepackage[]{algorithm2e}
+
+\newcommand{\class}{Inteligencia Artificial}
+\newcommand{\term}{2017-II}
+\newcommand{\examnum}{Examen Sustitutorio}
+\newcommand{\examdate}{2017-12-02}
+\newcommand{\timelimit}{3 horas}
+\newtheorem{teore}{Teorema}[section]
+
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - P\'agina \thepage\ de \numpages}{\examdate}
+\runningheadrule
+
+
+\begin{document}
+
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+\textbf{\class} & \textbf{Nombre:} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\\
+\textbf{\examnum} &&\\
+\textbf{\examdate} &&\\
+\textbf{Tiempo L\'imite: \timelimit} & Profesor: & Mg. Diego Benavides
+\end{tabular*}\\
+\rule[2ex]{\textwidth}{2pt}
+
+El examen contiene \numpages\ p\'aginas (incluyendo esta) y \numquestions\ preguntas. El total de puntaje es \numpoints.
+
+\begin{center}
+Tabla de puntaje (uso del profesor)\\
+\addpoints
+\gradetable[v][questions]
+\end{center}
+
+\noindent
+\rule[2ex]{\textwidth}{2pt}
+
+\begin{questions}
+
+\question[4] Dada la variable aleatoria discreta $X$ que representa el comportamiento de los datos de entrenamiento para un problema de clasificaci\'on con funci\'on de probabilidad definida por
+\begin{equation*}
+p(x)=\begin{cases} 
+      (\frac{1}{2})^x & \text{para } x=1,2,3,\cdots\\
+      0 & \text{en otro caso.}
+   \end{cases}
+\end{equation*}
+Hallar la esperanza $E(X)$ de la variable aleatoria en questi\'on.
+\addpoints
+
+\question[4] Henry llega t\'ipicamente tarde a la escuela. Si Henry llega tarde, denotamos a esto como $H=tarde$, en otro caso, $H=no tarde$. Cuando su madre pregunta si \'el lleg\'o tarde o no a la escuela, \'el nunca admite que llego tarde. La respuesta que Henry da $R_{H}$ queda representada como
+\begin{equation*}
+p(R_{H}=no tarde|H=no tarde)=1,\,\,\,\,p(R_{H}=tarde|H=tarde)=0.
+\end{equation*}
+Dado que $R_{H}=no tarde$, cu\'al es la probabilidad que Henry llego tarde, es decir, $p(H=tarde|R_{H}=no tarde)$.
+\addpoints
+
+\question[3] Sabemos de la regla de entrenamiento Delta para entrenar un Perceptron que el error cuadr\'atico medio es
+\begin{equation*}
+	E(\vec{w})=\frac{1}{2}\displaystyle\sum_{d\in D}(t_d-o_d)^2,
+\end{equation*}
+donde $D$ es el conjunto de datos de entrenamiento y la forma de actualizaci\'on del vector $\vec{w}$ esta dada por
+\begin{equation*}
+	\vec{w}\leftarrow \vec{w}+\Delta\vec{w},
+\end{equation*}
+donde $\Delta\vec{w}=-\eta\nabla E(\vec{w})$. Deducir la expresi\'on de actualizaci\'on para cada componente del vector $\vec{w}$.
+\addpoints
+
+\question[2] Hallar la entrop\'ia de un mensaje M de longitud 1 caracter, considerando el conjunto de caracteres ASCII y suponiendo una equiprobabilidad en sus 256 caracteres utilizando la formula general de la entrop\'ia para $n$ estados.
+\addpoints
+
+\question[4] Hallar el \'arbol de decisi\'on resultante haciendo uso del algoritmo ID3 y utilizando los datos de entrenamiento de la Tabla 1. ?`Cu\'ales son las variables aleatorias resultantes en los nodos del \'arbol? ?`Por qu\'e algunas son descartadas?
+\begin{table}[]
+\centering
+\label{playtennis}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Day}} & \multicolumn{1}{c|}{\textbf{Outlook}} & \multicolumn{1}{c|}{\textbf{Temperature}} & \multicolumn{1}{c|}{\textbf{Humidity}} & \multicolumn{1}{c|}{\textbf{Wind}} & \multicolumn{1}{c|}{\textbf{PlayTennis}} \\ \hline
+1                                  & Sunny                                 & Hot                                       & High                                   & Weak                               & No                                       \\ \hline
+2                                  & Sunny                                 & Hot                                       & High                                   & Strong                             & No                                       \\ \hline
+3                                  & Overcast                              & Hot                                       & High                                   & Weak                               & Yes                                      \\ \hline
+4                                  & Rain                                  & Mild                                      & High                                   & Weak                               & Yes                                      \\ \hline
+5                                  & Rain                                  & Cool                                      & Normal                                 & Weak                               & Yes                                      \\ \hline
+6                                  & Rain                                  & Cool                                      & Normal                                 & Strong                             & No                                       \\ \hline
+7                                  & Overcast                              & Cool                                      & Normal                                 & Strong                             & Yes                                      \\ \hline
+8                                  & Sunny                                 & Mild                                      & High                                   & Weak                               & No                                       \\ \hline
+9                                  & Sunny                                 & Cool                                      & Normal                                 & Weak                               & Yes                                      \\ \hline
+10                                 & Rain                                  & Mild                                      & Normal                                 & Weak                               & Yes                                      \\ \hline
+11                                 & Sunny                                 & Mild                                      & Normal                                 & Strong                             & Yes                                      \\ \hline
+12                                 & Overcast                              & Mild                                      & High                                   & Strong                             & Yes                                      \\ \hline
+13                                 & Overcast                              & Hot                                       & Normal                                 & Weak                               & Yes                                      \\ \hline
+14                                 & Rain                                  & Mild                                      & High                                   & Strong                             & No                                       \\ \hline
+\end{tabular}
+\caption{Datos de entrenamiento PlayTennis.}
+\end{table}
+\addpoints
+
+\question[3] Demostrar la ida del siguiente teorema: \\
+\textnormal{Sea $\mathbb{H}_{0}$ cualquier subespacio de $\mathbb{C}^{E}$, el espacio de funciones complejas definidas en E, en el cual definimos un producto interno $\left\langle\cdot,\cdot\right\rangle_{\mathbb{H}_{0}}$, con la norma generada $||.||_{\mathbb{H}_{0}}$. Si existe un espacio de Hilbert $\mathbb{H}$ tal que}
+\begin{itemize}
+\item[\textnormal{\textbf{a)}}]\textnormal{$\mathbb{H}_{0}\subset\mathbb{H}\subset\mathbb{C}^E$ y la topolog\'ia definida en $\mathbb{H}_{0}$ inducida por el producto interno $\left\langle\cdot,\cdot\right\rangle_{\mathbb{H}_{0}}$ coincide con la topolog\'ia inducida sobre $\mathbb{H}_{0}$ por $\mathbb{H}$,}
+\item[\textnormal{\textbf{b)}}]\textnormal{$\mathbb{H}$ tiene un kernel reproductivo $K$,}
+\end{itemize}
+\textnormal{entonces se cumple que}
+\begin{itemize}
+\item[\textnormal{\textbf{c)}}]\textnormal{las evaluaciones funcionales $(e_{t})_{t\in E}$ son continuas en $\mathbb{H}_{0}$,}
+\item[\textnormal{\textbf{d)}}]\textnormal{cualquier sucesi\'on de cauchy $(f_{n})$ en $\mathbb{H}_{0}$ puntualmente convergente a $0$ converge tambi\'en a $0$ en el sentido de norma.}
+\end{itemize}
+
+
+\addpoints
+
+
+\end{questions}
+
+\end{document}
